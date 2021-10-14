@@ -29,7 +29,7 @@ header {
 	min-height: 400px;
 	background: rgba(255,255,255, 0.8);
 	border-radius: 2em;
-	shadow-box 2px 2px rgba(0, 0, 0, 0.2);
+	shadow-box: 2px 2px rgba(0, 0, 0, 0.2);
     }
 #lhalf {
     width: 50%;
