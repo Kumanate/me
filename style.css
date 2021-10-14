@@ -72,8 +72,6 @@ footer {
   }
 .mobile {
     display: none;
-    overflow: hidden;
-    position: relative;
 }
 
 main {
@@ -95,7 +93,11 @@ header h5 {
 
 @media only screen and (max-width: 600px) {
     .desktop {display: none;}
-    .mobile {display: block;}
+    .mobile {
+	display: block;
+	overflow: hidden;
+        position: relative;
+	}
 	.myLinks {display: none;}
 }
 
