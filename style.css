@@ -113,7 +113,7 @@ header h5 {
             font-size: 1.2em;
         }
 
-        .tab a {
+        .tab p {
             font-weight: bold;
             overflow: hidden;
             max-width: 0;
@@ -145,7 +145,7 @@ header h5 {
         border-top-right-radius: 30px;
         border-top-left-radius: 30px;
     }
-	footer p {
+	.sign {
 		font-size: 8px;
 	}
 }
