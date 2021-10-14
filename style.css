@@ -73,6 +73,7 @@ main {
     display: block;
     height: 1500px;
     margin-top: 30px;
+	color: #ffffff;
 }
 header h5 {
     font-style: italic;
