@@ -15,6 +15,7 @@ main header footer body {
 body {
 		background: linear-gradient(to right, #b845e6, #1ab2c9);
 	font-family:'Trebuchet MS', sans-serif;
+	margin: 0,0,0,0;
 }
 header {
 	color: white;
