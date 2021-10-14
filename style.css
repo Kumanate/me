@@ -70,6 +70,9 @@ footer {
     font-style: bold;
     opacity: 0.3;
   }
+.mobile {
+    display: none;
+}
 main {
     padding-top: 10px;
     padding-bottom: 5px;
