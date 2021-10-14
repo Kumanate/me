@@ -70,7 +70,7 @@ footer {
   .navbar a:hover {
     color: white;
   }
-.mobile {
+.tab-nav-container {
     display: none;
 }
 
@@ -93,12 +93,57 @@ header h5 {
 
 @media only screen and (max-width: 600px) {
     .desktop {display: none;}
-    .mobile {
-	display: inline;
-	overflow: hidden;
-        position: relative;
-	}
-	.myLinks {display: none;}
+
+    .tab {
+        background-color: #ffffff;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        margin: 0 10px;
+        transition: background 0.4s linear;
+    }
+    .tab-nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+        .tab i {
+            font-size: 1.2em;
+        }
+
+        .tab p {
+            font-weight: bold;
+            overflow: hidden;
+            max-width: 0;
+        }
+
+        .tab.active p {
+            margin-left: 10px;
+            max-width: 200px;
+            transition: max-width 0.4s linear;
+        }
+        .tab-nav-container {
+            padding: 20px;
+        }
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 999;
+        background-color: #fff;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
 }
 
 @media print {
