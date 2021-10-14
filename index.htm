@@ -1,3 +1,125 @@
-<html>
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Nathan Spaugh">
+<meta name="keywords" content="スパー　ネイサン, Nathan Spaugh, web design, Front End Developer, St. Louis Developer">
+<!--[if lt IE 9]>
+<script src=”http://html5shim.googlecode.com/svn/trunk/html5.js”>
+</script> <![endif]-->
+
+<!--Nathan Spaugh Index last updated 5/13/18 by Nathan Spaugh-->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+            <span style="float:right; text-decoration: none; color: blue;">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com"></a>
+            <a href="https://www.linkedin.com"></a>
+            <a href="#yahoo#"></a>
+            </span>
+        </nav>
+        <h1>Nathan Spaugh</h1>
+        <h5>Aspiring Front End Developer</h5>
+
+
+    </header>
+    <div id="wrapper">
+    <main>
+    <div id="lhalf">
+    <h2>
+    
+    </h2>
+    <p>
+    "Understanding the diverse background of clients and consumers is critical to creating friendly and functional sites."
+    </p>
+    </div>
+    <div id="rhalf">
+        <h2></h2>
+    <img src="images/family2017.jpg" width= "50%" height= "50%">
+    </div>
+    </main>
+    </div>
+    <footer>
+        <p>Site created and managed by <a href="mailto: ndspaugh@hotmail.com">Nathan Spaugh</a></p>
+        <p>Last updated on November 15, 2019</p>
+    </footer>
+</body>
 </html>
+
+<script>
+$(window).on('resize', function() {
+  'use strict';
+  var element	= document.querySelector('#banner'),
+      elHeight = 0,
+      elTop = 0,
+      dHeight	= 0,
+      wHeight	= 0,
+      wScrollCurrent = 0,
+      wScrollBefore	= 0,
+      wScrollDiff	= 0; 
+      window.addEventListener('scroll', function () {
+        // Hide the displayed menu. If you want to scroll, you're obviously not interested in the options.
+        $('.navbar-collapse').collapse('hide');
+        $('.navbar-toggle').addClass('collapsed').blur();
+        if($(window).width() <= 768) {
+          elHeight = element.offsetHeight;
+          dHeight = document.body.offsetHeight;
+          wHeight = window.innerHeight;
+          wScrollCurrent = window.pageYOffset;
+          wScrollDiff = wScrollBefore - wScrollCurrent;
+          elTop = parseInt(window.getComputedStyle(element).getPropertyValue('top')) + wScrollDiff;
+
+          // scrolled to the very top; element sticks to the top
+          if(wScrollCurrent <= 0) {
+              element.style.top = '0px';
+          } // scrolled up; element slides in
+            else if(wScrollDiff > 0) {
+              element.style.top = (elTop > 0? 0 : elTop) + 'px'; 
+          } // scrolled down
+            else if(wScrollDiff < 0) {
+              // scrolled to the very bottom; element slides in
+              if(wScrollCurrent + wHeight >= dHeight - elHeight) {  
+                element.style.top = ( ( elTop = wScrollCurrent + wHeight - dHeight ) < 0 ? elTop : 0 ) + 'px';
+              } // scrolled down; element slides out
+                else { element.style.top = ( Math.abs( elTop ) > elHeight ? -elHeight : elTop ) + 'px'; }
+            }
+          wScrollBefore = wScrollCurrent;
+        } //
+          else element.style.top = '0px';
+      });
+}).resize();
+
+// Floating label headings for the contact form
+$(function() {$("body")
+ .on("input propertychange", ".form-item",function(e) {
+  $(this).toggleClass("form-item-filled",!! $(e.target).val());})
+ .on("focus", ".form-item",function() {
+  $(this).addClass("form-item-focused");})
+ .on("blur", ".form-item",function() {
+  $(this).removeClass("form-item-focused");});
+});
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({target: '.navbar-fixed-top'})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+  $(".navbar-collapse").collapse('hide');});
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {$('body').on('click', 'a.scrollable', function(event) {
+  var $anchor = $(this);
+  $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
+  event.preventDefault();
+  });
+});
+</script>
