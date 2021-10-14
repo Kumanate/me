@@ -113,10 +113,11 @@ header h5 {
             font-size: 1.2em;
         }
 
-        .tab p {
+        .tab a {
             font-weight: bold;
             overflow: hidden;
             max-width: 0;
+	    text-decoration: none;
         }
 
         .tab.active p {
