@@ -14,7 +14,7 @@ main header footer body {
 }
 body {
 	background: linear-gradient(to right, #0eedcf, #ffffff 20%);
-	background-image:radial-gradient (circle at top right, #b0f3f7, #ffffff);
+	background-image: radial-gradient(circle at top right, #b0f3f7, #ffffff);
 }
 
 #wrapper {
