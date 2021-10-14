@@ -13,7 +13,7 @@ main header footer body {
     margin:0 auto; 
 }
 #wrapper {
-	background: linear-gradient(to right, blue, white;
+	background: linear-gradient(to right, blue, white);
 	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
