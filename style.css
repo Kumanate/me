@@ -28,7 +28,7 @@ header {
 	max-width: 1480px;
 	min-height: 400px;
 	background: rgba(255,255,255, 0.8);
-	border-radius: 2m;
+	border-radius: 2em;
     }
 #lhalf {
     width: 50%;
