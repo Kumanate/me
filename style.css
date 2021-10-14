@@ -64,6 +64,7 @@ footer {
   }
   
   .navbar a:hover {
+    color: white;
     background: #ddd;
     font-style: bold;
     opacity: 0.3;
