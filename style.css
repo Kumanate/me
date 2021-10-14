@@ -25,6 +25,7 @@ body {
 	max-width: 1480px;
 	min-height: 400px;
 	background-color: white;
+	    color: #000000;
     }
 #lhalf {
     width: 50%;
@@ -40,7 +41,6 @@ body {
 }
 body {
     background-color: black;
-    color: #000000;
 }
 footer {
     text-align: center;
