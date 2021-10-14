@@ -14,13 +14,8 @@ main header footer body {
 }
 body {
 	background: linear-gradient(to right, #0eedcf, #ffffff);
-	.combined-gradient1 {
-  background: repeating-linear-gradient(45deg, rgba(00, 00, 255, 0.8), rgba(00, 00, 255, 0.8) 5px, rgba(255, 255, 255, 0) 5px, rgba(255, 255, 255, 0) 10px), radial-gradient(rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8), rgba(30, 144, 255, 0.8));
 }
 
-.combined-gradient2 {
-  background: radial-gradient(rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8), rgba(30, 144, 255, 0.8)), repeating-linear-gradient(45deg, rgba(00, 00, 255, 1), rgba(00, 00, 255, 1) 5px, rgba(255, 255, 255, 0) 5px, rgba(255, 255, 255, 0) 10px);
-}
 #wrapper {
 	width: 95%;
 	margin-right: auto;
