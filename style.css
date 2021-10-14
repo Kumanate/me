@@ -18,7 +18,7 @@ body {
 }
 header {
 	color: white;
-	padding-left: 8em;
+	padding-left: 6em;
 }
 #wrapper {
 	width: 95%;
@@ -53,7 +53,7 @@ footer {
 .navbar {
     top: 0;
     width: 100%;
-    padding-right: 8em;
+    padding-right: 6em;
   }
   
   .navbar a {
