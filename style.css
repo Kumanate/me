@@ -75,9 +75,6 @@ footer {
     overflow: hidden;
     position: relative;
 }
-.myLinks {
-    display: block;
-}
 
 main {
     padding-top: 10px;
@@ -98,7 +95,7 @@ header h5 {
 
 @media only screen and (max-width: 600px) {
     .desktop {display: none;}
-    .mobile {display: inline;}
+   .myLinks {display: block;}
 }
 
 @media print {
