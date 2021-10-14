@@ -16,28 +16,17 @@
 </head>
 <body>
     <header>
-        <nav class="navbar"> 
-          <div class="desktop">
-          <a href="#contact">Contact</a>
-          <a href="#news">Experience</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#home">Home</a>
+        <nav class="navbar">
+            <div class="desktop">
+                <a href="#contact">Contact</a>
+                <a href="#experience">Experience</a>
+                <a href="hobby.html">Hobbies</a>
+                <a href="#home">Home</a>
             </div>
-        <div class="mobile">
-          <div id="myLinks">
-          <a href="#contact">Contact</a>
-          <a href="#news">Experience</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#home">Home</a>
-            </div>
-           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i></a>
-            </div>
-            
             <span style="text-decoration: none; color: blue;">
-            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-            <a href="https://www.twitter.com"></a>
-            <a href="https://www.linkedin.com"></a>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com"></a>
+                <a href="https://www.linkedin.com"></a>
                 <a href="#yahoo#"></a>
             </span>
         </nav>
@@ -62,19 +51,43 @@
     </main>
     </div>
     <footer>
+        <div class="tab-nav-container">
+            <div class="tab active">
+                <i class="fas fa-home"></i>
+                <p>Home</p>
+            </div>
+            <div class="tab">
+                <i class="far fa-heart"></i>
+                <p><a href="hobby.html">Hobbies</a></p>
+            </div>
+            <div class="tab">
+                <i class="fas fa-search"></i>
+                <p>Search</p>
+            </div>
+            <div class="tab">
+                <i class="far fa-user"></i>
+                <p>Profile</p>
+            </div>
+        </div>
         <p>Site created and managed by <a href="mailto: ndspaugh@hotmail.com">Nathan Spaugh</a></p>
         <p>Last updated on October 13, 2021</p>
     </footer>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+    const tabs = document.querySelectorAll('.tab');
+
+    tabs.forEach(clickedTab => {
+        // Add onClick event listener on each tab
+        clickedTab.addEventListener('click', () => {
+            // Remove the active class from all the tabs (this acts as a "hard" reset)
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Add the active class on the clicked tab
+            clickedTab.classList.add('active');
+        });
+    });
 </script>
 
 </body>
