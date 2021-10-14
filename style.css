@@ -10,7 +10,7 @@ main header footer body {
     flex-flow:row wrap;
     justify-content:space-around;
     align-items:flex-start;
-	Font: Oswald;
+	Font-family: Oswald;
     margin:0 auto; 
 }
 body {
