@@ -75,6 +75,10 @@ footer {
     overflow: hidden;
     position: relative;
 }
+.mylinks {
+    display: none;
+}
+
 main {
     padding-top: 10px;
     padding-bottom: 5px;
