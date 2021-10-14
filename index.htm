@@ -17,10 +17,12 @@
 <body>
     <header>
         <nav class="navbar">
+            <div id="myLinks">
           <a href="#contact">Contact</a>
           <a href="#news">Experience</a>
           <a href="#hobbies">Hobbies</a>
           <a href="#home">Home</a>
+            </div>
           
             <span style="text-decoration: none; color: blue;">
             <a href="https://www.facebook.com" class="fa fa-facebook"></a>
@@ -54,5 +56,17 @@
         <p>Site created and managed by <a href="mailto: ndspaugh@hotmail.com">Nathan Spaugh</a></p>
         <p>Last updated on October 13, 2021</p>
     </footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 </body>
 </html>
