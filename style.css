@@ -47,7 +47,7 @@ header {
 body {
     background-color: black;
 }
-footer {
+footer p {
     text-align: center;
     font-style: italic;
 }
