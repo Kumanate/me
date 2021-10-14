@@ -27,7 +27,6 @@ header {
 	max-width: 1480px;
 	min-height: 400px;
 	background-color: white;
-	color: #000000;
     }
 #lhalf {
     width: 50%;
@@ -75,7 +74,9 @@ main {
     display: block;
     height: 1500px;
     margin-top: 30px;
-	color: #ffffff;
+}
+main p2 {
+    color: #000000;
 }
 header h5 {
     font-style: italic;
