@@ -23,6 +23,7 @@ body {
 	min-width: 180px;
 	max-width: 1480px;
 	min-height: 400px;
+	background-color: white;
     }
 #lhalf {
     width: 50%;
