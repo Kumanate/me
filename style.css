@@ -96,6 +96,7 @@ header h5 {
 @media only screen and (max-width: 600px) {
     .desktop {display: none;}
     .mobile {display: block;}
+    .myLinks {display: block;}
 }
 
 @media print {
