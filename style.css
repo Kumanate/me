@@ -76,7 +76,7 @@ footer {
     position: relative;
 }
 .myLinks {
-    display: none;
+    display: block;
 }
 
 main {
