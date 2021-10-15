@@ -10,6 +10,7 @@ main header footer body {
     flex-flow:row wrap;
     justify-content:space-around;
     align-items:flex-start;
+    margin:0 auto; 
 }
 body {
 		background: linear-gradient(to right, #b845e6, #1ab2c9);
@@ -21,7 +22,7 @@ header {
 	padding-left: 6em;
 }
 #wrapper {
-	width: 95%;
+	width: 90%;
 	margin-right: 5em;
 	margin-left: 5em;
 	min-width: 180px;
