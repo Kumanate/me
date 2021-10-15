@@ -10,7 +10,6 @@ main header footer body {
     flex-flow:row wrap;
     justify-content:space-around;
     align-items:flex-start;
-    margin:0 auto; 
 }
 body {
 		background: linear-gradient(to right, #b845e6, #1ab2c9);
