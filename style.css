@@ -23,8 +23,8 @@ header {
 }
 #wrapper {
 	width: 95%;
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: 5em;
+	margin-left: 5em;
 	min-width: 180px;
 	max-width: 1480px;
 	min-height: 400px;
